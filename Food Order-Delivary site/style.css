@@ -1,0 +1,264 @@
+/* CSS Reset */
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+
+/* Logo and Images */
+#logo{
+    margin: 20px 34px;
+    padding-left: 20px;
+    
+}
+
+#logo img{
+    /* margin: ; */
+    height: 90px;
+    margin: 3px 6px;
+    width: 90px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    
+}
+
+#navbar, ul{
+    display: flex;
+}
+
+#navbar::before{
+    content: "";
+    background-color: rgb(255, 222, 193);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+
+ul, li{
+    /* color: white; */
+    list-style: none;
+    font-size: 25px;
+    padding-left: 100px;
+    padding-right: 50px;
+}
+
+#navbar ul li a{
+    /* list-style: none; */
+    font-family: 'Baloo Tamma 2', cursive;
+    display: block;
+    text-decoration: none;
+    padding: 3px 20px;
+    border-radius: 14px;
+    color: white;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 390px;
+    padding-top: 120px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    background: url('Images/background2.png')  no-repeat center center/cover ;
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 550px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    margin: 70px;
+    
+}
+
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    width: 578px;
+    font-family: 'Baloo Tamma 2', cursive;
+
+}
+
+/* services container */
+#services{
+    margin: 30px;
+    display: flex;
+    
+}
+
+#services .box{
+    border: 2px solid rgb(161, 10, 10);
+    padding: 24px;
+    margin: 25px 45px;
+    border-radius: 28px;
+    background: rgb(243, 241, 234);
+}
+
+#services .box img{
+    height: 156px;
+    margin: auto;
+    display: block;
+}
+
+/* Clint Section */
+#client-section {
+    height: 355px;
+}
+
+/* #client-section::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 55%;
+    z-index: -1;
+    
+} */
+
+.client-item{
+    padding: 34px;
+}
+
+#client-section{
+    justify-content: center;
+    align-items: center;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Utility Classes  */
+.h-primary{
+    font-size: 3.2rem;
+    text-align: center;
+
+}
+
+
+section h1{
+    text-align: center;
+    font-size: 2.8rem;
+    height: 10px;
+    margin: 20px;
+    padding-top: 30px;
+}
+
+.h-secondary{
+    font-size: 2.2rem;
+    padding: 12px;
+    text-align: center;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid black;
+    background-color: red;
+    color: white;
+    margin: 13px;
+    font-size: 1.3rem;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.btn2{
+    /* padding: 6px 20px; */
+    padding: 3px 15px;
+    border: 2px solid black;
+    background-color: red;
+    color: white;
+    font-size: 1.3rem;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+#btn-submit{
+    margin-left: 180px;
+    margin-bottom: 0px;
+    margin-top: -20px;
+}
+
+/* Contact section */
+#contact{
+    position: relative;
+    height: 640px;
+}
+
+#contact::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('Images/client.jpg') no-repeat center center/cover;
+    padding-top: 105x;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 18px;
+
+}
+#contact .h-primary{
+    padding: 40px;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+#contact-box ,label{
+    font-size: 20px;
+    font-family: 'Baloo Tamma 2', cursive;
+}
+
+
+footer{
+    background: black;
+    color: white;
+    padding: 20px 0px;
+    margin-top: 30px;
+    text-align: center;
+}
+
